@@ -66,7 +66,7 @@ class _PegawaiUpdateFormState extends State<PegawaiUpdateForm> {
                 _fieldTangalLahir(),
                 _fieldNomorTelepon(),
                 _fieldEmail(),
-                _fieldPassword(),
+               
                 const SizedBox(height: 20),
                 _tombolSimpan()
               ],
@@ -129,12 +129,7 @@ class _PegawaiUpdateFormState extends State<PegawaiUpdateForm> {
     );
   }
 
-  _fieldPassword() {
-    return TextField(
-      decoration: const InputDecoration(labelText: "Password"),
-      controller: _passwordCtrl,
-    );
-  }
+  
 
   _tombolSimpan() {
     return ElevatedButton(

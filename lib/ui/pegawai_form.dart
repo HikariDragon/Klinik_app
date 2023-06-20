@@ -15,7 +15,7 @@ class _PegawaiFormState extends State<PegawaiForm> {
   final _tanggalLahirCtrl = TextEditingController();
   final _nomorTeleponCtrl = TextEditingController();
   final _emailCtrl = TextEditingController();
-  final _passwordCtrl = TextEditingController();
+  
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +33,7 @@ class _PegawaiFormState extends State<PegawaiForm> {
                 _fieldTangalLahir(),
                 _fieldNomorTelepon(),
                 _fieldEmail(),
-                _fieldPassword(),
+              
                 const SizedBox(height: 20),
                 _tombolSimpan(),
               ],
@@ -102,12 +102,7 @@ class _PegawaiFormState extends State<PegawaiForm> {
     );
   }
 
-  _fieldPassword() {
-    return TextField(
-      decoration: const InputDecoration(labelText: "Password"),
-      controller: _passwordCtrl,
-    );
-  }
+ 
 
   _tombolSimpan() {
     return ElevatedButton(
